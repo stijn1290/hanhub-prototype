@@ -8,6 +8,7 @@
     <title>Chat</title>
 
     <link rel="stylesheet" href="../style/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
@@ -17,13 +18,13 @@
     <!-- Chat Header -->
     <header class="chat-header">
 
-        <button class="back-button" aria-label="Go back">
+        <a href="../index.html" class="back-button" aria-label="Go back">
             ←
-        </button>
+        </a>
 
         <div class="user-info">
             <img
-                    src="../images/profile.jpg"
+                    src="../images/profile-image.svg"
                     alt="Profile picture"
                     class="profile-picture"
             >
@@ -36,11 +37,11 @@
 
         <div class="header-actions">
             <button aria-label="Call">
-                📞
+                <i data-lucide="phone"></i>
             </button>
 
             <button aria-label="Video call">
-                📹
+                <i data-lucide="video"></i>
             </button>
         </div>
 
@@ -66,7 +67,7 @@
         <div class="message-group message-received">
 
             <img
-                    src="../images/profile.jpg"
+                    src="../images/profile-image.svg"
                     alt=""
                     class="message-avatar"
             >
@@ -106,7 +107,7 @@
         <div class="message-group message-received">
 
             <img
-                    src="../images/profile.jpg"
+                    src="../images/profile-image.svg"
                     alt=""
                     class="message-avatar"
             >
@@ -133,28 +134,32 @@
     <!-- Message Input -->
     <footer class="chat-input">
 
-        <input
-                type="text"
-                placeholder="Message..."
-                aria-label="Message"
-        >
+        <div class="floating-bar">
+            <input
+                    type="text"
+                    placeholder="Message..."
+                    aria-label="Message"
+            >
 
-        <button aria-label="Voice message">
-            🎤
-        </button>
+            <button aria-label="Voice message">
+                <i data-lucide="mic"></i>
+            </button>
 
-        <button aria-label="Emoji">
-            ☺
-        </button>
+            <button aria-label="Emoji">
+                <i data-lucide="smile"></i>
+            </button>
 
-        <button aria-label="Upload image">
-            🖼
-        </button>
+            <button aria-label="Upload image">
+                <i data-lucide="image"></i>
+            </button>
+        </div>
 
     </footer>
 
 </main>
-
+<script>
+    lucide.createIcons();
+</script>
 </body>
 
 </html>
