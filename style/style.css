@@ -20,6 +20,12 @@ body {
 
     background-color: var(--primary-color);
 }
+a{
+    text-decoration: none;
+}
+span {
+    color: var(--primary-color);
+}
 
 /* Main chat container */
 .chat-page {
@@ -253,4 +259,599 @@ body {
     font-size: 22px;
 
     cursor: pointer;
+}
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.home-page {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--background-color);
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HOME CONTENT
+========================= */
+
+.home-content {
+    flex: 1;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background-color: var(--background-color);
+
+    scrollbar-width: none;
+}
+
+.home-content::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.home-search {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin: 48px 17px 32px;
+    padding: 0 25px;
+
+    border-radius: 16px;
+
+    background-color: var(--primary-color);
+}
+
+.home-search svg {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    color: var(--secondary-color);
+
+    stroke-width: 2;
+}
+
+.home-search input {
+    width: 100%;
+    min-width: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.home-search input::placeholder {
+    color: var(--secondary-color);
+    opacity: 1;
+}
+
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.home-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 32px;
+}
+
+.home-action {
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 18px;
+
+    border: 2px solid #dedede;
+    border-radius: 13px;
+
+    background-color: white;
+
+    color: var(--secondary-color);
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.home-action svg {
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    stroke-width: 2;
+}
+
+
+/* =========================
+   HOME HERO
+========================= */
+
+.home-hero {
+    width: 100%;
+    height: 155px;
+
+    overflow: hidden;
+}
+
+.home-hero img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   HOME SECTION
+========================= */
+
+.home-section {
+    margin-top: 27px;
+}
+
+.home-section-header {
+    display: flex;
+    align-items: center;
+
+    padding: 0 32px;
+
+    margin-bottom: 27px;
+}
+
+.home-section-header h2 {
+    color: var(--primary-color);
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.home-section-arrow {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 12px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #f1f1f1;
+
+    color: var(--primary-color);
+
+    cursor: pointer;
+}
+
+.home-section-arrow svg {
+    width: 26px;
+    height: 26px;
+
+    stroke-width: 2.5;
+}
+
+
+/* =========================
+   HORIZONTAL APP LIST
+========================= */
+
+.home-horizontal-list {
+    display: flex;
+    gap: 25px;
+
+    padding: 0 32px 15px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: auto;
+}
+
+.home-horizontal-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.home-horizontal-list::-webkit-scrollbar-track {
+    background: #e5e5e5;
+}
+
+.home-horizontal-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.home-horizontal-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* =========================
+   APP ITEM
+========================= */
+
+.home-app-item {
+    min-width: 165px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    color: var(--text-color);
+
+    font-size: 22px;
+
+    text-align: center;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   APP ICON
+========================= */
+
+.home-app-icon {
+    width: 110px;
+    height: 110px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+}
+
+
+/* Outlook */
+
+.home-app-icon.outlook {
+    background-color: #f6f6f6;
+
+    color: #4c9bd6;
+
+    font-size: 54px;
+    font-weight: 500;
+}
+
+.home-app-icon.outlook span {
+    position: absolute;
+    left: 15px;
+}
+
+.home-app-icon.outlook svg {
+    position: absolute;
+
+    right: 5px;
+
+    width: 60px;
+    height: 60px;
+
+    stroke-width: 1.8;
+}
+
+
+/* Maps */
+
+.home-app-icon.maps {
+    background-color: #f7f7f7;
+
+    color: #28a95a;
+}
+
+.home-app-icon.maps svg {
+    width: 65px;
+    height: 65px;
+
+    stroke-width: 2;
+}
+
+
+/* Teams */
+
+.home-app-icon.teams {
+    background-color: #f4f4f4;
+
+    color: #5555bd;
+
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.home-app-icon.teams::before {
+    content: "";
+
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+
+    top: 8px;
+    right: 10px;
+
+    border-radius: 50%;
+
+    background-color: #7778e5;
+}
+
+.home-app-icon.teams::after {
+    content: "";
+
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+
+    top: 30px;
+    right: -3px;
+
+    border-radius: 50%;
+
+    background-color: #5555bd;
+}
+
+.home-app-icon.teams span {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Brightspace */
+
+.home-app-icon.brightspace {
+    background-color: #f67b35;
+
+    color: white;
+
+    font-size: 55px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   STUDENT SERVICES
+========================= */
+
+.home-service-icon {
+    width: 110px;
+    height: 110px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background-color: #f7f7f7;
+}
+
+
+/* SSH& */
+
+.home-service-icon.sshn {
+    background-color: #f5a05a;
+
+    color: white;
+
+    font-size: 34px;
+    font-weight: 600;
+}
+
+
+/* Osiris */
+
+.home-service-icon.osiris {
+    color: #e50920;
+}
+
+.home-service-icon.osiris svg {
+    width: 80px;
+    height: 80px;
+
+    stroke-width: 2;
+}
+
+
+/* ISAS */
+
+.home-service-icon.isas {
+    color: var(--secondary-color);
+
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.home-service-icon.isas::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 44px;
+
+    background-color: #222222;
+}
+
+.home-service-icon.isas span {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Rooster */
+
+.home-service-icon.rooster {
+    background-color: #f4f4f4;
+
+    color: var(--secondary-color);
+
+    font-size: 44px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   HOME BOTTOM NAVIGATION
+========================= */
+
+.home-bottom-nav {
+    height: 82px;
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0 18px;
+
+    background-color: var(--primary-color);
+}
+
+.home-nav-item {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary-color);
+
+    text-decoration: none;
+}
+
+.home-nav-item svg {
+    width: 32px;
+    height: 32px;
+
+    stroke-width: 2.5;
+}
+
+
+/* Active home icon */
+
+.home-nav-item.active svg {
+    width: 35px;
+    height: 35px;
+
+    fill: var(--secondary-color);
+}
+
+
+/* Add button */
+
+.home-nav-item.add {
+    width: 44px;
+    height: 44px;
+
+    border: 3px solid var(--secondary-color);
+    border-radius: 9px;
+}
+
+.home-nav-item.add svg {
+    width: 28px;
+    height: 28px;
+
+    fill: none;
+}
+
+
+/* Profile */
+
+.home-nav-item.profile {
+    width: 48px;
+    height: 48px;
+
+    overflow: hidden;
+
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+}
+
+.home-nav-item.profile img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   HOME INDICATOR
+========================= */
+
+.home-indicator {
+    position: absolute;
+
+    left: 50%;
+    bottom: 6px;
+
+    width: 135px;
+    height: 5px;
+
+    transform: translateX(-50%);
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    z-index: 30;
 }
