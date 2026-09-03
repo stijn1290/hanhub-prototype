@@ -855,3 +855,150 @@ span {
 
     z-index: 30;
 }
+
+.signup-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: url("../images/school.png") center / cover no-repeat;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(245, 245, 245, 0.65);
+}
+
+.signup-content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 390px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px 25px;
+}
+
+.signup-logo {
+    width: 100px;
+    height: 100px;
+
+    object-fit: contain;
+
+    margin-bottom: 55px;
+}
+
+.signup-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.signup-heading h1 {
+    margin-bottom: 10px;
+
+    font-size: 24px;
+}
+
+.signup-heading p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.signup-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.signup-form input {
+    height: 55px;
+
+    padding: 0 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 14px;
+
+    font-size: 18px;
+}
+
+.continue-button,
+.han-button {
+    height: 58px;
+
+    border: none;
+    border-radius: 14px;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.continue-button {
+    background: #000;
+}
+
+.han-button {
+    background: #E50056;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+
+    background: #333;
+}
+
+.divider p {
+    margin: 0;
+
+    color: #E50056;
+
+    font-size: 18px;
+}
+
+.terms {
+    margin-top: 35px;
+
+    text-align: center;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.social-text {
+    position: relative;
+    z-index: 1;
+
+    margin-top: auto;
+    margin-bottom: 25px;
+
+    padding: 0 20px;
+
+    text-align: center;
+
+    font-size: 15px;
+    font-style: italic;
+}
