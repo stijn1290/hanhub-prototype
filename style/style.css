@@ -371,9 +371,7 @@ span {
     align-items: center;
 
     gap: 8px;
-
-    padding: 0 18px;
-
+    padding: 10px;
     border: 2px solid #dedede;
     border-radius: 13px;
 
@@ -764,8 +762,8 @@ span {
 }
 
 .home-nav-item {
-    width: 52px;
-    height: 52px;
+    width: 32px;
+    height: 32px;
 
     display: flex;
     align-items: center;
