@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" type="image/png" href="../images/hanhub.png">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<main class="chat-page">
+
+    <!-- Chat Header -->
+    <header class="chat-header">
+
+        <a href="../index.html" class="back-button" aria-label="Go back">
+            ←
+        </a>
+
+        <div class="user-info">
+            <img
+                    src="../images/profile-image.svg"
+                    alt="Profile picture"
+                    class="profile-picture"
+            >
+
+            <div class="user-details">
+                <h1>Alex Arts</h1>
+                <span>Actief 11m geleden</span>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <button aria-label="Call">
+                <i data-lucide="phone"></i>
+            </button>
+
+            <button aria-label="Video call">
+                <i data-lucide="video"></i>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- Messages -->
+    <section class="messages">
+
+        <!-- Sent message -->
+        <div class="message message-sent">
+            <p>dit is de chat template</p>
+        </div>
+
+
+        <!-- Date separator -->
+        <div class="date-separator">
+            Nov 30, 2023, 9:41 AM
+        </div>
+
+
+        <!-- Received messages -->
+        <div class="message-group message-received">
+
+            <img
+                    src="../images/profile-image.svg"
+                    alt=""
+                    class="message-avatar"
+            >
+
+            <div class="message-bubbles">
+                <div class="message">
+                    <p>Oh?</p>
+                </div>
+
+                <div class="message">
+                    <p>Cool</p>
+                </div>
+
+                <div class="message">
+                    <p>wat</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Sent messages -->
+        <div class="message-group message-sent">
+
+            <div class="message">
+                <p>dit gesprek loopt goed</p>
+            </div>
+
+            <div class="message">
+                <p>Boom!</p>
+            </div>
+
+        </div>
+
+
+        <!-- Received messages -->
+        <div class="message-group message-received">
+
+            <img
+                    src="../images/profile-image.svg"
+                    alt=""
+                    class="message-avatar"
+            >
+
+            <div class="message-bubbles">
+                <div class="message">
+                    <p>Hmmm</p>
+                </div>
+
+                <div class="message">
+                    <p>mooi gezegd</p>
+                </div>
+
+                <div class="message">
+                    <p>dag</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Message Input -->
+    <footer class="chat-input">
+
+        <div class="floating-bar">
+            <input
+                    type="text"
+                    placeholder="Bericht..."
+                    aria-label="Message"
+            >
+
+            <button aria-label="Voice message">
+                <i data-lucide="mic"></i>
+            </button>
+
+            <button aria-label="Emoji">
+                <i data-lucide="smile"></i>
+            </button>
+
+            <button aria-label="Upload image">
+                <i data-lucide="image"></i>
+            </button>
+        </div>
+
+    </footer>
+
+</main>
+<script>
+    lucide.createIcons();
+</script>
+</body>
+
+</html>
